@@ -1,8 +1,131 @@
 body{
+  width: 100%;
+  height: 100%;
   background-color: lightgrey;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 a{
   text-decoration: none;
   color: black;
+}
+#menu{
+  grid-template-rows: 1fr;
+  display: inline-grid;
+  background-color: white;
+  height: 100%;
+  width: 17.5%;
+  text-align: center;
+}
+h1{
+  position: absolute;
+  top: 10%;
+  left: 18%;
+}
+img{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+#toogle-menu{
+  position: absolute;
+  width: 60px;
+  height: 50px;
+  top: 5px;
+  left: 18%;
+  background-color: white;
+}
+#bar0{
+  position: absolute;
+  background-color: blue;
+  width: 50px;
+  height: 5px;
+  right: 5px;
+  top: 10px;
+}
+#bar1{
+  position: absolute;
+  background-color: red;
+  width: 50px;
+  height: 5px;
+  top: 22.5px;
+  right: 5px;
+}
+#bar2{
+  position: absolute;
+  background-color: black;
+  width: 50px;
+  height: 5px;
+  top: 35px;
+  right: 5px;
+}
+
+#wrapper-submenu{
+  position: absolute;
+  text-align: center;
+  width: 17.5%;
+  height: 50%;
+  top: 20%;
+}
+#submenu-sports{
+  padding: 20px;
+  font-size: 20px;
+  grid-template-rows: 1fr;
+  display: inline-grid;
+  width: 85%;
+}
+#submenu-encodage{
+  padding: 20px;
+  font-size: 20px;
+  background-color: red;
+}
+#submenu-statistiques{
+  padding: 20px;
+  font-size: 20px;
+  background-color: blue;
+}
+#submenu-dashboard{
+  padding: 20px;
+  font-size: 20px;
+  background-color: lightgreen;
+}
+#wrap-submenu-sports{
+  grid-template-rows: 1fr;
+  display: inline-grid;
+  padding: 5px;
+  font-size: 10px;
+}
+#wrap-submenu-sports{
+  transition: 1s;
+}
+#wrap-submenu-sports a{
+  padding: 20px;
+  font-size: 20px;
+}
+
+#submenu-foot{
+  display: none;
+}
+#submenu-foot.active{
+  display: block;
+}
+#submenu-tennis{
+  display: none;
+}
+#submenu-tennis.active{
+  display: block;
+}
+#submenu-baskett{
+  display: none;
+}
+#submenu-baskett.active{
+  display: block;
+}
+#submenu-hockey{
+  display: none;
+}
+#submenu-hockey.active{
+  display: block;
 }
